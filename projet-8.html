@@ -119,7 +119,35 @@
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
               <h2>Semaine 1</h2>
               <p>
-                Cette semaine, j’ai préparé l’environnement de virtualisation sous VMware en créant un LAN Segment isolé, en installant pfSense (routeur/pare-feu) et en validant la connectivité interne du lab avec un plan d’adressage dédié et j'ai fait la refonte du site internet.
+                    - Objectif initial : Déploiement d'un serveur de fichiers Windows (SMB) sur le réseau physique des locaux.
+                   
+                    <BR>- Contrainte rencontrée : Échec de la connectivité réseau. Les restrictions de sécurité et le filtrage des infrastructures du bâtiment empêchaient toute communication stable avec le serveur.
+                    
+                    <BR>- Décision technique : Abandon du déploiement sur le réseau physique au profit d'une infrastructure 100% virtualisée et autonome. Choix de créer un laboratoire (Lab) isolé pour s'affranchir des limites du réseau local.
+
+              <h2>Semaine 2</h2>
+              <p>
+                    - Mise en place : Installation de pfSense pour agir comme routeur et pare-feu propriétaire du projet.
+                    
+                    <BR>- Incident d'adressage : Détection d'un conflit d'IP entre le WAN (réseau des locaux) et le LAN virtuel (192.168.10.170).
+                    
+                   <BR> - Action corrective : Migration du plan d'adressage vers le sous-réseau 192.168.20.0/24 pour garantir l'étanchéité et le routage.
+
+
+              <h2>Semaine 3</h2>
+              <p>
+                  - Poste Client : Installation de Windows 11 Professionnel (Compte local via bypass OOBE).
+                    
+                    <BR>- Diagnostic Réseau : Résolution du blocage des adresses privées sur le WAN de pfSense pour rétablir l'accès Internet (NAT).
+                    
+                   <BR> - Recettage : Validation de la communication Client-Passerelle-Internet.
+
+              <h2>Semaine 4</h2>
+              <p>
+                    - Serveur : Déploiement de Windows Server 2022 (Hostname : SRV-DC-01).
+                    
+                   <BR> - Objectif immédiat : Promotion en Contrôleur de Domaine et gestion centralisée des ressources.
+
             </div>
           </div>
 
@@ -152,11 +180,6 @@
                   }
                 }
               </script>
-
-    <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Semaine 2</h2>
-              <p>
-                Cette semaine, j’ai installé et configuré Windows Server comme serveur d’infrastructure (AD DS/DNS), j’ai défini l’adressage IP statique, puis j’ai mis en place la distribution d’adresses (DHCP) et vérifié la résolution DNS sur les machines clientes.
             </div>
           </div>
 
