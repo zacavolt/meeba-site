@@ -1,0 +1,11 @@
+   <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/pfsense.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Réseau</h4>
+                  <p>Implémentation d’un pare-feu pfSense dans le cadre du projet GSB. </p>
+                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"></a>
+                  <a href="projet-3.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
